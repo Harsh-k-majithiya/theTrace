@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* 
+---------------------------------------------
+Portfolio
+--------------------------------------------- 
+*/
+
+.our-portfolio {
+  padding-top: 50px;
+  margin-top: 0px;
+  margin-left: 100px;
+ }
+
+.our-portfolio .section-heading h2 {
+  text-align: center;
+  margin: 0px 90px 0px 90px;
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 1;
+}
+.our-portfolio .section-heading h6 {
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  margin-bottom: 170px;
+  position: relative;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.our-portfolio .item {
+  position: relative;
+}
+
+.our-portfolio .item:hover .hidden-content {
+  top: -80px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.our-portfolio .item:hover .showed-content {
+  top: 170px;
+}
+
+.our-portfolio .hidden-content {
+  background: #006cff;
+  background: linear-gradient(#006cff,#006cff 100%);
+  padding: 30px;
+  margin-left: 0px;
+  border-radius: 20px;
+  text-align: left;
+  opacity: 0;
+  top: 0;
+  width: 300px;
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  transition: all 0.5s;
+}
+
+.our-portfolio .hidden-content:after {
+  position: relative;
+  content: '';
+  width: 300px;
+  bottom: -8px;
+  transform: rotate(45deg);
+  background: #006cff;
+  background: linear-gradient(#006cff,#006cff 100%);
+  z-index: -1;
+}
+
+.our-portfolio .hidden-content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.our-portfolio .hidden-content p {
+  color: #fff;
+}
+.our-portfolio .showed-content {
+  width: 300px;
+  position: relative;
+  z-index: 3;
+  background-color: #fff;
+  text-align: center;
+  padding: 50px;  
+  margin-top: -50px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  transition: all 0.5s;
+}
+.our-portfolio .showed-content img {
+  max-width: 300px;
+}

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    top:10px;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #00E676;
+    top:10px;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #111;
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #006cff;
+}
+
+/* Home section */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    background-position: center top;
+	background-size:cover;
+}
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+
+/* 
+---------------------------------------------
+Banner Style
+--------------------------------------------- 
+*/
+
+.main-banner {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 226px 0px 120px 0px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main-banner:after {
+    content: '';
+    /* background-image: url(../images/baner-dec-left.png); */
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 193px;
+    height: 467px;
+  }
+  
+  .main-banner:before {
+    content: '';
+    /* background-image: url(../images/baner-dec-right.png); */
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 98px;
+    height: 290px;
+  }
+  
+  .main-banner .left-content {
+    margin-right: 45px;
+  }
+  
+  .main-banner .left-content h6 {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.644);
+    margin-bottom: 15px;
+  }
+  
+  .main-banner .left-content h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #2a2a2a;
+    line-height: 72px;
+  }
+  
+  .main-banner .left-content h2 em {
+    color: #006cff;
+    font-style: normal;
+  }
+  
+  .main-banner .left-content h2 span {
+    color: #006cff;
+  }
+  
+  .main-banner .left-content p {
+    margin: 20px 0px;
+  }
+  
+  .main-banner .left-content form {
+    margin-top: 30px;
+    width: 470px;
+    height: 66px;
+    position: relative;
+  }
+  
+  .main-banner .left-content form button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: inline-block;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    color: #006cff;
+    text-transform: capitalize;
+    padding: 12px 25px;
+    border-radius: 23px;
+    letter-spacing: 0.25px;
+    outline: none;
+    border: none;
+  }
+  
+  .main-banner .left-content form input {
+    width: 200px;
+    height: 66px;
+    background-color: #006cff;
+    border-radius: 33px;
+    border: none;
+    text-align: center;
+    outline: none;
+    padding: 5px 5px 5px 5px;
+    color: #fff;
+    letter-spacing: 0.25px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .main-banner .left-content form input::placeholder {
+    color: #fff;
+  }
+  
+  
